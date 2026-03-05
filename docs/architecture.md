@@ -1,6 +1,6 @@
 # Relay Architecture
 
-> **Status:** Design phase. No code written yet.
+> **Status:** Implementation phase. V1 is currently being worked on.
 
 ---
 
@@ -72,9 +72,8 @@ relay/
 ---
 
 ## Open Questions
-
-2. **gRPC at low bandwidth:** Is HTTP/2 acceptable at ≤10 Kbps?
-3. **Connectivity probe:** TCP SYN? gRPC health check?
-5. **Queue depth limits:** Cap enforced? Eviction behavior?
-6. **Clock skew:** What behavior is guaranteed when nodes have unsynchronized clocks?
-7. **Conflict keys:** How are caller-supplied keys namespaced? What if none is supplied?
+1. **gRPC at low bandwidth:** Is HTTP/2 acceptable at ≤10 Kbps?
+2. **Connectivity probe:** TCP SYN? gRPC health check?
+3. **Queue depth limits:** Cap enforced? Eviction behavior?
+4. **Clock skew:** What behavior is guaranteed when nodes have unsynchronized clocks?
+5. **Conflict keys:** How are caller-supplied keys namespaced? What if none is supplied?
