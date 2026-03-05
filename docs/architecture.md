@@ -60,12 +60,12 @@ relay/
 
 ---
 
-## Key Technology Decisions
+## Key Technologies
 
 | Concern | Choice | Status |
 |---|---|---|
-| Language | Go (preferred) | Undecided - Go vs. Rust, needs final call |
-| Storage | SQLite | Strong preference |
+| Language | Go | Chosen |
+| Storage | SQLite | Chosen |
 | Transport | gRPC | Preferred; HTTP/2 overhead at ≤10 Kbps needs validation |
 | Container | Docker / OCI | OCI required for air-gapped podman environments |
 
